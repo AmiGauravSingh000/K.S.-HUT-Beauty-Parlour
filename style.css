@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: black;
+}
+.navbar-container{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+    padding: 0 25px;
+}
+.rightContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 95vh; 
+    background-image: url('./images/banner\ pic.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    /* margin-top: 30px; */
+   
+}
+
+.secondContainer h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.secondContainer p{
+    font-size: 1.5em;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thirdContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    /* margin-top: 30px; */
+    border-bottom: 2px solid white;
+    /* border-top: 2px solid white; */
+}
+.thirdContainer .leftdiv h1{
+   font-size: 2em;
+   padding: 15px 0;
+}
+.thirdContainer .leftdiv h4{
+    font-size: 1em;
+    font-weight: 300;
+}
+.thirdContainer .leftdiv h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+button{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+.fourthContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 200px; */
+    border-bottom: 2px solid white;
+}
+
+.fourthContainer div{
+    position: relative;
+    flex: 1;
+    width: 33%;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourthContainer div:hover img {
+    filter: blur(3px);
+    transform: scale(1.1);
+}
+
+.fourthContainer div:hover .overlay {
+    opacity: 1;
+}
+.fourthContainer div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+     transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+.fourthContainer div .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    gap: 20px;
+    
+}
+.fourthContainer div .overlay h3{
+    font-weight: 300;
+}
+
+.fifthContainer{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.fifthContainer img{
+    width: 40px
+}
+.fifthContainer p{
+    padding: 0 80px;
+    line-height: 2.5rem;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.sixthContainer{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+.sixthContainer img{
+    width: 40%;
+}
+.sixthContainer div{
+    width: 50%;
+}
+.sixthContainer div h3{
+    font-size: 1em;
+    font-weight: 300;
+}
+.sixthContainer div h1{
+    font-size: 2em;
+    padding: 15px 0;
+    font-weight: 500;
+}
+.sixthContainer div p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: italic;
+}
+.seventhContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 25px;
+}
+.seventhContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    width: 25%;
+    gap: 10px;
+    padding: 10px;
+}
+.seventhContainer div img{
+    width: 50px;
+}
+.seventhContainer div h2{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.seventhContainer div p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(166, 166, 166);
+}
+
+.timingSpan{
+    display: block;
+}
+.daySpan{
+    font-weight: 800;
+}
+.timings{
+    margin-top: 10px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.eightContainer{
+    margin-top: 40px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.whatsapp-icon:hover {
+    opacity: 0.8;
+}
