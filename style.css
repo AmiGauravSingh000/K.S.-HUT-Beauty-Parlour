@@ -81,7 +81,7 @@ a{
     font-size: 1.5em;
     font-weight: 400;
 }
-button{
+.regularbtn{
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -266,4 +266,133 @@ button:hover{
 
 .whatsapp-icon:hover {
     opacity: 0.8;
+}
+
+.ninthContainer{
+margin-top: 30px;
+display: flex;
+align-items: center;
+/* position: relative; */
+flex-direction: column;
+padding: 30px;
+}
+.ninthContainer .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 10px;
+    margin-top: 30px;
+}
+.ninthContainer .text h4{
+    font-weight: 300;
+}
+.ninthContainer .text h2{
+    font-weight: 500;
+}
+
+.ninthContainer .text h3{
+    font-weight: 350;
+}
+
+.slider{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.sliderImages {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.1 ease;
+    padding: 0px;
+}
+
+.sliderImages img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    align-content: center;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.slider button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.sliderBtnPrev {
+    left: 0;
+}
+
+.sliderBtnNext {
+    right: 0;
+}
+
+.textAndSign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px;
+}
+
+.textAndSign .sign {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.imageDescription {
+    margin: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease padding 0.3s ease;
+}
+
+
+.tenthContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+.box {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    font-weight: 500;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.content {
+    margin-top: 10px;
+    font-weight: 300;
+}
+.hours ul, .navigation ul, .important ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+.hours li, .navigation li, .important li {
+    margin-bottom: 5px;
 }
